@@ -1,6 +1,6 @@
 ---
 
-# **UnZipX Example App 🚀**
+## **UnZipX Example App 🚀**
 
 **Pub Version:** [![Pub](https://img.shields.io/pub/v/unzipx)](https://pub.dev/packages/unzipx)  
 **License:** MIT  

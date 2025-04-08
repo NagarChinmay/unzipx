@@ -1,7 +1,8 @@
 name: unzipx
 description: "UnZipX is a lightweight Flutter package that extracts ZIP files from the assets folder and saves them to the app's support directory. It simplifies asset extraction with a single"
 version: 0.0.1
-homepage:
+homepage: "https://github.com/NagarChinmay/unzipx"
+repository: "https://github.com/NagarChinmay/unzipx"
 
 environment:
   sdk: ^3.7.2
@@ -12,7 +13,7 @@ dependencies:
     sdk: flutter
   archive: ^3.3.7
   path_provider: ^2.1.2
-  
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
