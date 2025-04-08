@@ -7,8 +7,9 @@ import 'package:path_provider/path_provider.dart';
 import 'package:archive/archive.dart';
 
 class UnZipX {
-  /// Extracts a ZIP file from assets and saves it in the app support directory.
-  static Future<String> extractZipFromAssets(String assetPath) async {
+  /// Extracts a ZIP file from assets to the application support directory.
+  /// Returns the path where files were extracted.
+  static Future<String> init(String assetPath) async {
     try {
       final ByteData data = await rootBundle.load(assetPath);
       final List<int> bytes = data.buffer.asUint8List();
@@ -29,7 +30,7 @@ class UnZipX {
 
       return directory.path;
     } catch (e) {
-      throw Exception("Error extracting ZIP file: $e");
+      throw Exception("UnZipX Error: $e");
     }
   }
 }
